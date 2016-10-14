@@ -1,0 +1,3 @@
+[submodule "pdfsign.js"]
+	path = pdfsign.js
+	url = https://github.com/Communication-Systems-Group/pdfsign.js.git
