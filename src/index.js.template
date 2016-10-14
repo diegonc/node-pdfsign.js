@@ -1,5 +1,5 @@
-var forge = require('./forge-patched');
-var pdfjs = require('./pdfjs.parser');
+var forge = require('./forge/forge');
+var pdfjsCoreDocument = require('./pdfjs/core/document');
 
 var PDFSIGN = {}; // will be replaced by pdfsign.js
 var sha256 = null;

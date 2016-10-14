@@ -25,6 +25,7 @@
   "homepage": "https://github.com/diegonc/node-pdfsign.js#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
     "gulp-rename": "^1.2.2",
     "gulp-wrap": "^0.13.0",
     "node-forge": "^0.6.43"
