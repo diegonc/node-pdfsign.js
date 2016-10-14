@@ -26,6 +26,7 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
-    "gulp-wrap": "^0.13.0"
+    "gulp-wrap": "^0.13.0",
+    "node-forge": "^0.6.43"
   }
 }
