@@ -1,0 +1,36 @@
+var forge = require('./forge-patched');
+var pdfjs = require('./pdfjs.parser');
+
+var PDFSIGN = {}; // will be replaced by pdfsign.js
+var sha256 = null;
+var sha224 = null;
+
+var sha_root = {};
+
+/* pdfsign's JS file comes with a SHA module
+ * embedded and we don't want to expose it
+ * as our own exports.
+ *
+ * However, we still need the main module
+ * to be able to access its functions.
+ * That's why we are going to
+ *
+ *    1. shadow node's module with
+ *       an undefined value
+ *    2. set 'this' to an object were those
+ *       functions are collected.
+ */
+(function initialize (module) {
+	<%= contents %>
+}).call(sha_root);
+
+/*    3. make the local variables defined above
+ *       point to the sha module's ones such that
+ *       pdfsign is able to use it.
+ */
+sha256 = sha_root.sha256;
+sha224 = sha_root.sha224;
+
+console.log("sha_root:", sha_root);
+
+module.exports = PDFSIGN;
