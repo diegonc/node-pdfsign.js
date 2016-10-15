@@ -1,4 +1,4 @@
-var forge = require('./forge/forge');
+var forge = require('./forge');
 var pdfjsCoreDocument = require('./pdfjs/core/document');
 
 var PDFSIGN = {}; // will be replaced by pdfsign.js
