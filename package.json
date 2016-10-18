@@ -1,5 +1,5 @@
 {
-  "name": "npm-pdfsign.js",
+  "name": "npm-pdfsign",
   "version": "0.0.1",
   "description": "Wrap pdfsing.js in a NPM package",
   "main": "dist/index.js",
